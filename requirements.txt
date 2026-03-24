@@ -1,0 +1,10 @@
+streamlit
+torch
+torchvision
+transformers
+datasets
+pinecone-client
+scikit-learn
+pandas
+numpy
+pillow

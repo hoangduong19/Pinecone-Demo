@@ -3,7 +3,7 @@ torch
 torchvision
 transformers
 datasets
-pinecone-client
+pinecone
 scikit-learn
 pandas
 numpy

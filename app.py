@@ -12,7 +12,7 @@ import pandas as pd
 
 # --- CONFIGURATION & UI ---
 st.set_page_config(page_title="Vector DB Scaling Demo", layout="wide")
-st.title("🛡️ Pinecone Serverless: Scaling & Performance Benchmark")
+st.title("Pinecone Serverless: Scaling & Performance Benchmark")
 
 # --- KHỞI TẠO SESSION STATE CHO SCALING HISTORY ---
 if "history" not in st.session_state:
@@ -93,8 +93,7 @@ def calculate_recall(pinecone_results, q_vec, namespace, top_k=4):
 # --- 3. SIDEBAR CONFIG ---
 with st.sidebar:
     st.header("⚙️ Admin & Benchmark")
-    value_api_key = st.secrets["PINECONE_API_KEY"]
-    api_key = st.text_input("Pinecone API Key", type="password", value=value_api_key)
+    api_key = st.secrets["PINECONE_API_KEY"]
     
     index_name = "scaling-demo-v3" 
     
